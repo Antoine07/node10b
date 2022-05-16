@@ -2,7 +2,7 @@
 
 Dans une application sécurisée par vos soin avec Node/Express, et d'autres technologies, vous allez développer une interface permettant de faire des statistiques sur un Dataset spécifique : le titanic.
 
-L'utilisation de React pour l'interface utilisateur peut être utilisé. Vous pouvez utiliser Symfony pour développer une API, avec React éventuellement.
+L'utilisation de React pour l'interface utilisateur peut être utilisé.
 
 L'objectif de l'application et d'afficher les survivants du Titanic en fonction du sex, de l'age et de la classe des billets.
 
