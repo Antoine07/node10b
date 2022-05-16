@@ -1,0 +1,5 @@
+if flash_message
+    if flash_message.type == 'danger'
+        p.alert.alert-danger=flash_message.content
+    if flash_message.type == 'success'
+        p.alert.alert-success=flash_message.content
