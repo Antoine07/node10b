@@ -1,0 +1,13 @@
+extends ../layouts/frontend.pug
+
+block content
+    form(action="/search", method="post")
+        div.mb-3
+            label.form-label Name: 
+                input.form-control(type="text", name="name")
+        button.btn.btn-primary(type="submit") Search
+
+block sidebar
+    ul
+        each author in authors
+            li=author
