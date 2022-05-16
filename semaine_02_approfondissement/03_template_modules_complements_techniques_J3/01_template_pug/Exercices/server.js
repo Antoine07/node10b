@@ -15,9 +15,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views') );
 
+const posts = [
+    { title : "pug", date : "2022-04-22"},
+    { title : "Express", date : "2022-03-20"},
+]
+
 app.get('/', (req, res) => {
 
-    res.render('posts/index', { posts : [] });
+    res.render('posts/index', { posts });
 });
 
 app.listen(port, () => {
