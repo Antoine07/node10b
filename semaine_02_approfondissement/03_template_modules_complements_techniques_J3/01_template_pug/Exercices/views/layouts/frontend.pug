@@ -9,8 +9,10 @@ html(lang="en")
         title Posts 
 
     body 
-        nav.navbar.navbar-light.bg-light
-            a.navbar-brand(href="/") Home           
-                     
-        block content
-          
+        include ../partials/menu/main.pug    
+
+        .container.row
+            .col-4
+                block sidebar
+            .col-8
+                block content

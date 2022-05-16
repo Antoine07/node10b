@@ -5,3 +5,8 @@ block content
         div
             h1=post.title
             p=post.date 
+
+block sidebar
+    ul
+        each author in authors
+            li=author

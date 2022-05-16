@@ -123,9 +123,9 @@ Organisez les templates comme dans le modèle proposé dans le cours. Pensez à 
 
 ```js
 const posts = [
-  { title : "Pug", date : "2022-04-21"},
-  { title : "Express", date : "2022-04-22"},
-  { title : "Node.js", date : "2022-04-23"},
+  { title : "Pug", date : "2022-04-21", priority : "important" },
+  { title : "Express", date : "2022-04-22", priority : "normal"},
+  { title : "Node.js", date : "2022-04-23",  priority : "important"},
 ];
 ```
 
@@ -133,3 +133,8 @@ const posts = [
 
 ![posts](../images/post.png)
 
+## 02 Exercice input
+
+1. Créez un formulaire pour récupérer le nom d'un auteur, faite une page spécifique avec un formulaire. Si l'auteur n'existe pas afficher un message en conséquence.
+
+2. Rendre effectif le lien affichant l'ensemble des articles. Modifiez la page d'accueil pour n'afficher que les articles imporants.
