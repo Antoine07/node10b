@@ -139,10 +139,33 @@ const posts = [
 
 2. Rendre effectif le lien affichant l'ensemble des articles. Modifiez la page d'accueil pour n'afficher que les articles imporants.
 
-## 03 Exercice Router
+## 03 Exercice Router & fonction iterator async
 
-1. Ajoutez un router pour factoriser les routes de l'application. Aidez-vous de la documentation officiel Express.
+1. Ajoutez un router pour factoriser les routes de l'application. Aidez-vous de la documentation officiel Express. Voyez l'exemple suivant, à mettre dans un fichier routes.js
+
+```js
+
+// routes.js
+const router = express.Router();
+
+router.get('/', (req, res) => {});
+
+export default router;
+
+```
+
+Dans votre server importez les routes comme suit.
+
+```js
+import routes from './routes.js';
+
+
+// ...
+
+app.use('/api', routes);
+
+```
 
 2. Créez une page produit les produits consommés par le client. Attention, la récupération de ces informations doit-être faite en considérant l'asynchronisme.
 
-Il faudra construire un itérateur.
+Il faudra construire un itérateur asynchrone avec Symbole
