@@ -138,3 +138,11 @@ const posts = [
 1. Créez un formulaire pour récupérer le nom d'un auteur, faite une page spécifique avec un formulaire. Si l'auteur n'existe pas afficher un message en conséquence.
 
 2. Rendre effectif le lien affichant l'ensemble des articles. Modifiez la page d'accueil pour n'afficher que les articles imporants.
+
+## 03 Exercice Router
+
+1. Ajoutez un router pour factoriser les routes de l'application. Aidez-vous de la documentation officiel Express.
+
+2. Créez une page produit les produits consommés par le client. Attention, la récupération de ces informations doit-être faite en considérant l'asynchronisme.
+
+Il faudra construire un itérateur.
