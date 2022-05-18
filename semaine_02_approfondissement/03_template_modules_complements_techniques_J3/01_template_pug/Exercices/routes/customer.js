@@ -1,4 +1,6 @@
 import express from "express";
+
+import passengerController from "../controllers/passengerController.js";
 import authors from "./../Data/authors.js";
 import posts from "./../Data/posts.js";
 
@@ -40,6 +42,8 @@ router.post("/search", (req, res) => {
 
   res.redirect("/search");
 });
+
+router.get('/passengers', passengerController);
 
 router.get("/customer", (req, res) => {});
 
